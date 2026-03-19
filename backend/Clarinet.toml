@@ -16,3 +16,9 @@ passes = [
 ]
 
 [repl.analysis.lint_groups]
+
+[repl.analysis.lints]
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false

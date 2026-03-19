@@ -11,3 +11,8 @@ clarity_version = 4
 epoch = 'latest'
 [repl.analysis]
 passes = [
+    'check_checker',
+    'call_checker',
+]
+
+[repl.analysis.lint_groups]

@@ -1,0 +1,6 @@
+{
+  "name": "payeer-stacks-helpers",
+  "version": "1.0.1",
+  "description": "Stacks helper scripts and contract testing utilities for the Payeer backend.",
+  "type": "module",
+  "private": false,

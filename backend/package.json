@@ -9,3 +9,9 @@
     "url": "https://github.com/Gbangbolaoluwagbemiga/Payeer"
   },
   "bugs": {
+    "url": "https://github.com/Gbangbolaoluwagbemiga/Payeer/issues"
+  },
+  "homepage": "https://github.com/Gbangbolaoluwagbemiga/Payeer#readme",
+  "files": [
+    "README.md",
+    "contracts"

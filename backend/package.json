@@ -21,3 +21,9 @@
     "clarity",
     "payeer",
     "helpers"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "vitest run",

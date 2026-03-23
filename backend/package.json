@@ -15,3 +15,9 @@
   "files": [
     "README.md",
     "contracts"
+  ],
+  "keywords": [
+    "stacks",
+    "clarity",
+    "payeer",
+    "helpers"

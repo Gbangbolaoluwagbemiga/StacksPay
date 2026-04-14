@@ -57,3 +57,9 @@ sbtc_balance = 1_000_000_000
 # secret_key: 7036b29cb5e235e5fd9b09ae3e8eec4404e44906814d5d01cbca968a60ed4bfb01
 # stx_address: ST3AM1A56AK2C1XAFJ4115ZSV26EB49BVQ10MGCS0
 # btc_address: mzxXgV6e4BZSsz8zVHm3TmqbECt7mbuErt
+
+[accounts.wallet_7]
+mnemonic = "prevent gallery kind limb income control noise together echo rival record wedding sense uncover school version force bleak nuclear include danger skirt enact arrow"
+balance = 100_000_000_000_000
+sbtc_balance = 1_000_000_000
+# secret_key: b463f0df6c05d2f156393eee73f8016c5372caa0e9e29a901bb7171d90dc4f1401

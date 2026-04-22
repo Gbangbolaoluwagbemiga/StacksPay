@@ -8,3 +8,9 @@ deployment_fee_rate = 10
 # seed phrases directly into TOML files.  To do so, run:
 #
 #     clarinet deployments encrypt
+#
+# Enter your seed phrase and a password, then paste the encrypted mnemonic here.
+#
+# Otherwise, use the mnemonic field below:
+#
+mnemonic = "<YOUR PRIVATE TESTNET MNEMONIC HERE>"

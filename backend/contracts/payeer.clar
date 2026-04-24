@@ -9,3 +9,9 @@
     creator: principal,
     amount: uint,
     reason: (string-ascii 50),
+    is-resolved: bool,
+    chosen-payer: (optional principal),
+    participants-count: uint
+  }
+)
+

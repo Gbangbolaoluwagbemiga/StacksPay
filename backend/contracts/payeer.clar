@@ -15,3 +15,9 @@
   }
 )
 
+(define-map SessionParticipants
+  { session-id: uint, participant-id: uint }
+  {
+    participant-principal: principal,
+    participant-name: (string-ascii 50)
+  }

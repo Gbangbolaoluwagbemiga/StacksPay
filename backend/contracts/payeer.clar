@@ -78,3 +78,9 @@
     (map-set Sessions session-id (merge session {
       is-resolved: true,
       chosen-payer: (some chosen-participant)
+    }))
+    
+    (ok true)
+  )
+)
+

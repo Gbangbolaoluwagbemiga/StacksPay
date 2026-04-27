@@ -44,3 +44,8 @@
 
 ;; add a participant
 (define-public (add-participant (session-id uint) (name (string-ascii 50)) (participant principal))
+  (let
+    (
+      (session (unwrap! (map-get? Sessions session-id) (err u404)))
+      (count (get participants-count session))
+      (new-count (+ count u1))

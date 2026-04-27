@@ -55,3 +55,9 @@
     (asserts! (not (get is-resolved session)) (err u400))
     
     (map-insert SessionParticipants { session-id: session-id, participant-id: count } {
+      participant-principal: participant,
+      participant-name: name
+    })
+    
+    (map-set Sessions session-id (merge session { participants-count: new-count }))
+    (ok new-count)

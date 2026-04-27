@@ -66,3 +66,9 @@
 
 ;; Resolve session with the randomly chosen payer from frontend spinner
 (define-public (resolve-session (session-id uint) (chosen-participant principal))
+  (let
+    (
+      (session (unwrap! (map-get? Sessions session-id) (err u404)))
+      (count (get participants-count session))
+    )
+    (asserts! (is-eq tx-sender (get creator session)) (err u403))

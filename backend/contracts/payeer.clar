@@ -61,3 +61,8 @@
     
     (map-set Sessions session-id (merge session { participants-count: new-count }))
     (ok new-count)
+  )
+)
+
+;; Resolve session with the randomly chosen payer from frontend spinner
+(define-public (resolve-session (session-id uint) (chosen-participant principal))

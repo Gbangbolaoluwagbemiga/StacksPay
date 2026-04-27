@@ -38,3 +38,9 @@
       chosen-payer: none,
       participants-count: u0
     })
+    (ok session-id)
+  )
+)
+
+;; add a participant
+(define-public (add-participant (session-id uint) (name (string-ascii 50)) (participant principal))

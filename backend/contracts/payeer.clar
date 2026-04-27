@@ -84,3 +84,8 @@
   )
 )
 
+;; Read only functions
+(define-read-only (get-session (session-id uint))
+  (map-get? Sessions session-id)
+)
+

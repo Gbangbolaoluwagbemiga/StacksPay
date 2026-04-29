@@ -95,3 +95,4 @@
 
 (define-read-only (get-session-counter)
   (ok (var-get session-counter))
+)

@@ -38,3 +38,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={outfit.className}>
         <WalletProvider>
+          {children}
+        </WalletProvider>
+      </body>
+    </html>
+  );
+}

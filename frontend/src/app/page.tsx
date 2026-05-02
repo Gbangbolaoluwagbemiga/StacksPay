@@ -21,3 +21,8 @@ function SpinnerWheel({
   rotation,
 }: {
   friends: { id: string; name: string }[];
+  rotation: number;
+}) {
+  const size = 300;
+  const cx = size / 2;
+  const cy = size / 2;

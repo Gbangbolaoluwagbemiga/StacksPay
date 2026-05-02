@@ -26,3 +26,9 @@ function SpinnerWheel({
   const size = 300;
   const cx = size / 2;
   const cy = size / 2;
+  const r = size / 2 - 4;
+
+  if (friends.length === 0) {
+    return (
+      <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
+        <circle cx={cx} cy={cy} r={r} fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.1)" strokeWidth="2" />

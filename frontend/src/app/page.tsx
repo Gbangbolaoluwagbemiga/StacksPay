@@ -15,3 +15,9 @@ const COLORS = [
   "#8a2be2", "#ff3b3b", "#00c9c9", "#ff00aa",
   "#ffd700", "#00d48a", "#ff6600", "#5591f5",
 ];
+
+function SpinnerWheel({
+  friends,
+  rotation,
+}: {
+  friends: { id: string; name: string }[];

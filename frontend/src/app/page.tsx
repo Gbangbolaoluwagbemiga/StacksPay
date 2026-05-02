@@ -38,3 +38,9 @@ function SpinnerWheel({
       </svg>
     );
   }
+
+  const sliceAngle = 360 / friends.length;
+
+  function polarToCartesian(angleDeg: number, radius: number) {
+    const rad = ((angleDeg - 90) * Math.PI) / 180;
+    return {

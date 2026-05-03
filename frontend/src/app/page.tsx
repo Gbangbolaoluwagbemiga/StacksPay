@@ -61,3 +61,9 @@ function SpinnerWheel({
       width={size}
       height={size}
       viewBox={`0 0 ${size} ${size}`}
+      style={{ transform: `rotate(${rotation}deg)`, transition: "transform 5s cubic-bezier(0.1,0.8,0.1,1)" }}
+    >
+      {friends.map((friend, i) => {
+        const startAngle = i * sliceAngle;
+        const endAngle = startAngle + sliceAngle;
+        const midAngle = startAngle + sliceAngle / 2;

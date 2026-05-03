@@ -55,3 +55,9 @@ function SpinnerWheel({
     const largeArc = endAngle - startAngle > 180 ? 1 : 0;
     return `M ${cx} ${cy} L ${start.x} ${start.y} A ${r} ${r} 0 ${largeArc} 1 ${end.x} ${end.y} Z`;
   }
+
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox={`0 0 ${size} ${size}`}

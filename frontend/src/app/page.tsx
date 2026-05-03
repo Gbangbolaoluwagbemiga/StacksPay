@@ -67,3 +67,8 @@ function SpinnerWheel({
         const startAngle = i * sliceAngle;
         const endAngle = startAngle + sliceAngle;
         const midAngle = startAngle + sliceAngle / 2;
+        const textPos = polarToCartesian(midAngle, r * 0.65);
+
+        const displayName = friend.name.length > 10 ? friend.name.slice(0, 8) + "…" : friend.name;
+
+        return (

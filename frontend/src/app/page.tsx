@@ -49,3 +49,9 @@ function SpinnerWheel({
     };
   }
 
+  function slicePath(startAngle: number, endAngle: number) {
+    const start = polarToCartesian(startAngle, r);
+    const end = polarToCartesian(endAngle, r);
+    const largeArc = endAngle - startAngle > 180 ? 1 : 0;
+    return `M ${cx} ${cy} L ${start.x} ${start.y} A ${r} ${r} 0 ${largeArc} 1 ${end.x} ${end.y} Z`;
+  }

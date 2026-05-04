@@ -78,3 +78,9 @@ function SpinnerWheel({
               fill={COLORS[i % COLORS.length]}
               stroke="rgba(0,0,0,0.3)"
               strokeWidth="1.5"
+            />
+            <text
+              x={textPos.x}
+              y={textPos.y}
+              textAnchor="middle"
+              dominantBaseline="middle"

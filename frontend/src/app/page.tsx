@@ -124,3 +124,9 @@ export default function Home() {
   };
 
   const spinWheel = () => {
+    if (friends.length < 2 || spinning) return;
+    setSpinning(true);
+    setWinner(null);
+    setTxId(null);
+
+    const spins = 7 + Math.floor(Math.random() * 5);

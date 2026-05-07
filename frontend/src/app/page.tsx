@@ -130,3 +130,8 @@ export default function Home() {
     setTxId(null);
 
     const spins = 7 + Math.floor(Math.random() * 5);
+    const sliceAngle = 360 / friends.length;
+    const winnerIdx = Math.floor(Math.random() * friends.length);
+    const targetAngle = 360 - (winnerIdx * sliceAngle + sliceAngle / 2);
+    const totalRotation = rotation + spins * 360 + (targetAngle - (rotation % 360) + 360) % 360;
+

@@ -135,3 +135,9 @@ export default function Home() {
     const targetAngle = 360 - (winnerIdx * sliceAngle + sliceAngle / 2);
     const totalRotation = rotation + spins * 360 + (targetAngle - (rotation % 360) + 360) % 360;
 
+    setRotation(totalRotation);
+
+    setTimeout(() => {
+      setWinner({ name: friends[winnerIdx].name, index: winnerIdx });
+      setSpinning(false);
+    }, 5200);

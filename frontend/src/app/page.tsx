@@ -158,3 +158,9 @@ export default function Home() {
         ],
         network: STACKS_MAINNET,
         onFinish: (data) => {
+          console.log("Transaction finished:", data.txId);
+          setTxId(data.txId);
+          setRecording(false);
+        },
+        onCancel: () => {
+          console.log("Transaction cancelled");

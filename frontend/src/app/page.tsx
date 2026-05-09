@@ -147,3 +147,9 @@ export default function Home() {
     if (!winner || !isConnected || recording) return;
     setRecording(true);
 
+    try {
+      await openContractCall({
+        contractAddress: CONTRACT_ADDRESS,
+        contractName: CONTRACT_NAME,
+        functionName: "create-session",
+        functionArgs: [

@@ -153,3 +153,8 @@ export default function Home() {
         contractName: CONTRACT_NAME,
         functionName: "create-session",
         functionArgs: [
+          uintCV(0), // amount (free session)
+          stringAsciiCV(`Payeer Result: ${winner.name}`) || stringAsciiCV("Payeer Result")
+        ],
+        network: STACKS_MAINNET,
+        onFinish: (data) => {

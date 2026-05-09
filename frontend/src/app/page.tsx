@@ -181,3 +181,9 @@ export default function Home() {
   const shortAddress = address ? `${address.slice(0, 6)}...${address.slice(-4)}` : null;
 
   return (
+    <main className="container">
+      <div className="header-bar">
+        <div className="logo-wrap">
+          <div className="logo-spin-wrapper">
+            <Image src="/logo.png" alt="Payeer Logo" width={40} height={40} className="logo-img" />
+          </div>

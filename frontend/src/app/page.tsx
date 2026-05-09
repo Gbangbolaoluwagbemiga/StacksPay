@@ -170,3 +170,9 @@ export default function Home() {
     } catch (e) {
       console.error(e);
       setRecording(false);
+    }
+  };
+
+  const closeWinner = () => {
+    setWinner(null);
+    setTxId(null);

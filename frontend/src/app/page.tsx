@@ -164,3 +164,9 @@ export default function Home() {
         },
         onCancel: () => {
           console.log("Transaction cancelled");
+          setRecording(false);
+        },
+      });
+    } catch (e) {
+      console.error(e);
+      setRecording(false);

@@ -187,3 +187,9 @@ export default function Home() {
           <div className="logo-spin-wrapper">
             <Image src="/logo.png" alt="Payeer Logo" width={40} height={40} className="logo-img" />
           </div>
+          <span className="logo-text">Payeer</span>
+        </div>
+        <div className="wallet-connect">
+          {isConnected ? (
+            <div className="wallet-connected">
+              <span className="wallet-address">

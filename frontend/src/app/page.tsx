@@ -193,3 +193,9 @@ export default function Home() {
           {isConnected ? (
             <div className="wallet-connected">
               <span className="wallet-address">
+                <span className="wallet-dot" />
+                {shortAddress}
+              </span>
+              <button className="btn-secondary btn-sm" onClick={disconnect} title="Disconnect">
+                <LogOut size={16} />
+              </button>

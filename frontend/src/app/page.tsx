@@ -199,3 +199,8 @@ export default function Home() {
               <button className="btn-secondary btn-sm" onClick={disconnect} title="Disconnect">
                 <LogOut size={16} />
               </button>
+            </div>
+          ) : (
+            <button className="btn-connect" onClick={connect}>
+              <Wallet size={18} />
+              Connect Wallet

@@ -204,3 +204,9 @@ export default function Home() {
             <button className="btn-connect" onClick={connect}>
               <Wallet size={18} />
               Connect Wallet
+            </button>
+          )}
+        </div>
+      </div>
+
+      <div className="hero">

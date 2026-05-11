@@ -227,3 +227,9 @@ export default function Home() {
                 maxLength={20}
               />
               <button type="submit">
+                <Plus size={20} />
+              </button>
+            </div>
+          </form>
+
+          {friends.length > 0 && (

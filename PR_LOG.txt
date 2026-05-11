@@ -1,0 +1,1 @@
+PR 6: Optimize docs in Config (part 6)

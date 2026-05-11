@@ -222,3 +222,8 @@ export default function Home() {
               <input
                 type="text"
                 placeholder="Enter friend's name..."
+                value={newName}
+                onChange={(e) => setNewName(e.target.value)}
+                maxLength={20}
+              />
+              <button type="submit">
